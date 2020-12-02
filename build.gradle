@@ -10,7 +10,6 @@ buildscript {
         google()
     }
     dependencies {
-        
 
     }
 }
@@ -61,6 +60,10 @@ project(":core") {
 
 
     dependencies {
+        testCompile 'junit:junit:4.12'
+        testCompile 'org.mockito:mockito-core:3.2.4'
+        testCompile 'org.powermock:powermock-api-mockito2:2.0.4'
+        testCompile 'org.powermock:powermock-module-junit4:2.0.4'
         compile "com.badlogicgames.gdx:gdx:$gdxVersion"
         compile "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
         compile "com.badlogicgames.gdx:gdx-ai:$aiVersion"
